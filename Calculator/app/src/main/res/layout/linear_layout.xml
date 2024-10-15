@@ -36,20 +36,27 @@
 
     </LinearLayout>
 
-    <EditText
-        android:id="@+id/editTextText2"
+    <TextView
+        android:id="@+id/text_operation"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingRight="20dp"
+        android:text=""
+        android:gravity="right|bottom"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/text_result"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="2"
-        android:padding="20dp"
-        android:background="@null"
-        android:autofillHints="0"
-        android:ems="10"
-        android:inputType="number"
+        android:paddingRight="20dp"
         android:text="0"
-        android:textAlignment="viewEnd"
-        android:textSize="52sp"
-        tools:ignore="HardcodedText,LabelFor" />
+        android:textColor="@color/black"
+        android:gravity="right"
+        android:textSize="60sp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -64,9 +71,11 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:background="@color/white">
+            android:background="@color/white"
+            tools:ignore="NestedWeights">
 
             <Button
+                android:id="@+id/btnCE"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -79,6 +88,7 @@
                 tools:ignore="HardcodedText,NestedWeights" />
 
             <Button
+                android:id="@+id/btnC"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -91,6 +101,7 @@
                 tools:ignore="HardcodedText" />
 
             <Button
+                android:id="@+id/btnBS"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -103,6 +114,7 @@
                 tools:ignore="HardcodedText" />
 
             <Button
+                android:id="@+id/btnDiv"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -125,6 +137,7 @@
             android:background="@color/white">
 
             <Button
+                android:id="@+id/btn7"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -137,6 +150,7 @@
                 tools:ignore="HardcodedText,NestedWeights" />
 
             <Button
+                android:id="@+id/btn8"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -149,6 +163,7 @@
                 tools:ignore="HardcodedText" />
 
             <Button
+                android:id="@+id/btn9"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -161,6 +176,7 @@
                 tools:ignore="HardcodedText" />
 
             <Button
+                android:id="@+id/btnMul"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -183,6 +199,7 @@
             android:background="@color/white">
 
             <Button
+                android:id="@+id/btn4"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -195,6 +212,7 @@
                 tools:ignore="HardcodedText,NestedWeights" />
 
             <Button
+                android:id="@+id/btn5"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -207,6 +225,7 @@
                 tools:ignore="HardcodedText" />
 
             <Button
+                android:id="@+id/btn6"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -219,6 +238,7 @@
                 tools:ignore="HardcodedText" />
 
             <Button
+                android:id="@+id/btnSub"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -241,6 +261,7 @@
             android:background="@color/white">
 
             <Button
+                android:id="@+id/btn1"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -253,6 +274,7 @@
                 tools:ignore="HardcodedText,NestedWeights" />
 
             <Button
+                android:id="@+id/btn2"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -265,6 +287,7 @@
                 tools:ignore="HardcodedText" />
 
             <Button
+                android:id="@+id/btn3"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -277,6 +300,7 @@
                 tools:ignore="HardcodedText" />
 
             <Button
+                android:id="@+id/btnAdd"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -311,6 +335,7 @@
                 tools:ignore="HardcodedText,NestedWeights" />
 
             <Button
+                android:id="@+id/btn0"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -335,6 +360,7 @@
                 tools:ignore="HardcodedText" />
 
             <Button
+                android:id="@+id/btnEqual"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
